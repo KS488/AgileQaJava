@@ -1,2 +1,0 @@
-# AgileQaJava
-AgileQaJava
