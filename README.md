@@ -11,3 +11,9 @@ I want to see the number of vowels in each of the strings that I have entered.
 
  - to verfify if the consontat function is working fine yuo can run "java com/exercise.Main "look","spoon"" in the terminal 
 
+
+
+### suggestions
+
+- throw an error instead of a null and catch the the error in the Main class (try catch etc) in the vowelcounter class
+

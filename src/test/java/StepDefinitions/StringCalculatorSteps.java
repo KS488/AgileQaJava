@@ -1,6 +1,15 @@
 package StepDefinitions;
 
+
+import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertSame;
+import static org.junit.Assert.assertTrue;
+
 import java.util.List;
+
+import org.junit.Assert;
 
 import com.exercise.CountResult;
 import com.exercise.VowelCounter;
@@ -27,7 +36,9 @@ public void vowels_get_calculated() {
 
 @Then("the number of vowels should be calculated")
 public void the_number_of_vowels_should_be_calculated() {
-	resultVowel.contains(myStringArray);
+assertEquals(1, resultVowel.size());
+assertFalse(resultVowel.isEmpty());
+//assertTrue(resultVowel.contains("vowels"));
 }
 
 @When("consonants get calculated")
@@ -37,8 +48,12 @@ public void consonants_get_calculated() {
 
 @Then("the number of consonants should be calculated")
 public void the_number_of_consonants_should_be_calculated() {
-	resultVowel.contains(myStringArray);
-	
+
+	assertEquals(1, resultVowel.size());
+	assertFalse(resultVowel.isEmpty());
+	//assertTrue(resultVowel.contains("consonants"));
+
+
 	//System.out.println(resultVowel);
 	
 
