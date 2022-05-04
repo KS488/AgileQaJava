@@ -13,35 +13,36 @@ import io.cucumber.java.en.When;
 public class StringCalculatorSteps {
 	private VowelCounter counter;
 	private List<CountResult> resultVowel;
-
-@Given("i enter a {string}")
-public void i_enter_a(String[] args) {
-	counter = new VowelCounter();
-     resultVowel = counter.getVowelListWithCount(args);
+	private String[] myStringArray;
+@Given("i enter a (.*)$")
+public void i_enter_a(String string) {
+	
+	myStringArray = new String[]{string};
+	counter = new VowelCounter();     
 }
 
 @When("vowels get calculated")
 public void vowels_get_calculated() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	resultVowel = counter.getVowelListWithCount(myStringArray);
 }
 
 @Then("the number of vowels should be calculated")
 public void the_number_of_vowels_should_be_calculated() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	resultVowel.contains(myStringArray);
 }
 
 @When("consonants get calculated")
 public void consonants_get_calculated() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	resultVowel = counter.getVowelListWithCount(myStringArray);
 }
 
 @Then("the number of consonants should be calculated")
 public void the_number_of_consonants_should_be_calculated() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+	resultVowel.contains(myStringArray);
+	
+	System.out.println(resultVowel);
+	
+
 }
 
 }

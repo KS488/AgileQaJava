@@ -6,7 +6,6 @@ public class Main {
         VowelCounter counter = new VowelCounter();
         var resultVowel = counter.getVowelListWithCount(args);
         System.out.println(resultVowel);
-
       
 }
 }
