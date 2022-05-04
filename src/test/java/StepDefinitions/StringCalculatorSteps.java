@@ -3,7 +3,6 @@ package StepDefinitions;
 import java.util.List;
 
 import com.exercise.CountResult;
-import com.exercise.Main;
 import com.exercise.VowelCounter;
 
 import io.cucumber.java.en.Given;
@@ -40,7 +39,7 @@ public void consonants_get_calculated() {
 public void the_number_of_consonants_should_be_calculated() {
 	resultVowel.contains(myStringArray);
 	
-	System.out.println(resultVowel);
+	//System.out.println(resultVowel);
 	
 
 }
