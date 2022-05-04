@@ -13,11 +13,11 @@ public class VowelCounter {
         } else {
             List<String> argumentList = Arrays.asList(args);
             List<CountResult> vowelCount = new ArrayList<>();
-            List<CountResult> consonantCount = new ArrayList<>();
             argumentList.forEach(argument -> vowelCount.add(new CountResult(argument, getVowelCount(argument),getConsonantCount(argument))));
     
              return vowelCount;
         }
+    }
     
 
     private Integer getVowelCount(String input) {

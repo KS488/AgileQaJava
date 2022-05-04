@@ -6,8 +6,31 @@
 
     <groupId>agile.qa.interview.exercise</groupId>
     <artifactId>agile_qa_interview_exercise</artifactId>
-    <packaging>jar</packaging>
-    <version>1.0-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
+
+<dependencies>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.3.4</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
+
+
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>7.3.4</version>
+    </dependency>
+
+    </dependencies>
 
     <properties>
         <buildDirectory>target</buildDirectory>
